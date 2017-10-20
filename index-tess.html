@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Serendipity Shop is a responsive theme for flP \ Fashion Life People.</title>
+        <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noticia+Text:400,400i,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <!-- <script type="text/javascript" src="js/app.js"></script> -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <link rel="shortcut icon" href="img/ico/favicon.png" type="image/x-icon">
+        <link rel="icon" href="img/ico/favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <div>
+    <ul id="menu">
+        <li>Option One</li>
+        <li>Option Two</li>
+        <li>Option Three</li>
+        <li>Option Four</li>
+        <li>Option Five</li>
+        <li>Option Six</li>
+    </ul>
+    <ol>
+        <li>
+            Collected
+            <ul id="submenu"></ul>
+        </li>
+    </ol>
+</div>
+
+        <script>
+            var elemWidth, fitCount, varWidth = 0, ctr, 
+    $menu = $("ul#menu"), $collectedSet;
+
+ctr = $menu.children().length;
+$menu.children().each(function() {
+    varWidth += $(this).outerWidth();
+});
+
+collect();
+$(window).resize(collect);
+
+function collect() {
+    elemWidth = $menu.width();
+    fitCount = Math.floor((elemWidth / varWidth) * ctr) - 1;
+    
+    console.log(elemWidth + ", " + varWidth + ", " + fitCount);
+    
+    $menu.children().css({"display": "block", "width": "auto"});
+    $collectedSet = $menu.children(":gt(" + fitCount + ")");
+    $("#sub
+
+
+        </script>
+    </body>
+</html>
